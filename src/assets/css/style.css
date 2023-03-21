@@ -84,3 +84,31 @@ body {
     color: black;
     font-family: 'Poppins', sans-serif;
 }
+.banner{
+    width: 100%;
+    min-height: auto;
+}
+.input-search{
+    background: #d6a140;
+    border: none;
+    outline: none;
+    border-radius: 50px;
+    padding: 5px 30px;
+    color: white;
+}
+.input-search::placeholder{
+    font-size: 15px;
+    color: aliceblue;
+    font-family: 'Poppins', sans-serif;
+}
+#search{
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    color: white;
+}
+div > span{
+    text-transform: uppercase;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+}

@@ -1,12 +1,13 @@
 import React from 'react'
-
+import FindGame from './Layout/FindGame'
 import NavBar from './Layout/NavBar'
-import SectionNav from './Layout/SectionNav'
+
 
 function Page() {
     return (
         <React.Fragment>
             <NavBar />
+            <FindGame />
         </React.Fragment>
     )
 }

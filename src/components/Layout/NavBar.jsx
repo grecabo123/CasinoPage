@@ -1,6 +1,7 @@
 import React from 'react'
 import logo from '../../assets/logo/logo.png'
 import { FaHome, FaLock, FaUser } from 'react-icons/fa'
+import Banner from './Banner'
 
 function NavBar() {
     return (
@@ -65,6 +66,7 @@ function NavBar() {
                 </div>
             </nav>
             </div>
+            <Banner />
         </React.Fragment>
     )
 }
