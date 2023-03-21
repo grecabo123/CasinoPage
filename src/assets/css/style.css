@@ -143,6 +143,7 @@ div > span{
     transition: 0.5s;
     cursor: pointer;
     position: relative;
+    border: 4px solid #d6901e;
     /* background-color: black;
     opacity: 0.2; */
 }
@@ -155,7 +156,9 @@ div > span{
     top: 50px;
     left: 0;
     right: 0;  
-      
+}
+.boxhide{
+    display: none;
 }
 .colmn{
     display: flex;

@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import { FaCoins, FaHeart, FaSearch, FaStar, FaTrophy } from 'react-icons/fa'
 import { InputText } from 'primereact/inputtext';
 import { Button } from 'primereact/button';
@@ -7,6 +7,25 @@ import jsonfile from '../../assets/PRAGMATICPLAY-gamelist.json'
 
 
 function FindGame() {
+
+    const [hovers, setHover] = useState(false);
+    const [imageid, setId] = useState("");
+    const [selectedItemIndex, setSelectedItemIndex] = useState(-1);
+
+    useEffect(() => {
+        Display();
+    }, []);
+    const Display = (e) => {
+        // setHover(true)
+        setSelectedItemIndex(e);
+    }
+
+    const HideHover = () => {
+        setSelectedItemIndex(-1);
+    }
+
+
+
     return (
         <React.Fragment>
             <div className='bg-bottom-nav'>
@@ -84,10 +103,10 @@ function FindGame() {
                                     return (
                                         <div className="col-md-4">
                                             <div className="d-flex justify-content-between">
-                                                <div key={id} className="mb-3 box-relative">
-                                                    <img src={data.game_image} alt="image" className='img-bg' />
-                                                    <div className="d-none">
-                                                        <div className="transition-box">
+                                                <div key={id} className="mb-3 box-relative" onMouseEnter={(e) => Display(data.game_id)} onMouseLeave={HideHover}>
+                                                    <div>
+                                                        <img src={data.game_image} alt="image" className={selectedItemIndex !== data.game_id ? 'img-bg' : 'img-bg show'} />
+                                                        <div className={selectedItemIndex !== data.game_id ? 'boxhide' : "transition-box"}>
                                                             <div className="colmn">
                                                                 <button>Play Now</button>
                                                                 <button>Demo</button>
@@ -95,9 +114,11 @@ function FindGame() {
                                                             </div>
                                                         </div>
                                                     </div>
-                                                    <div className="d-flex justify-content-around">
-                                                        <span>{data.game_name_cn}</span>
-                                                        <span>star</span>
+                                                    <div className="d-block">
+                                                        <div className="d-flex justify-content-around">
+                                                            <span>{data.game_name_cn}</span>
+                                                            <span>star</span>
+                                                        </div>
                                                     </div>
                                                     {data.is_new === "Y" ? <span className='newtag'> <p>NEW</p></span> : ""}
                                                 </div>
