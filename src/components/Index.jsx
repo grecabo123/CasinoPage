@@ -6,7 +6,6 @@ import PublicRoutes from '../routes/PublicRoutes'
 function Index() {
     return (
         <React.Fragment>
-       
             <Switch>
                 {
                     PublicRoutes.map((route, idx) =>{

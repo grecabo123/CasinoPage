@@ -7,6 +7,7 @@ function App() {
         <Router>
             <Switch>
                 <Route path={'/'} name="Index" render={(props) => <Index {...props} />}></Route>
+                
             </Switch>
         </Router>
     )
