@@ -212,3 +212,53 @@ div > span{
     font-size: 13px;
     color: var(--button-login);
 }
+.bg-footer{
+    background-color: #141212;
+    padding: 30px;
+}
+.footer-column > h4{
+    font-size: 20px;
+    font-weight: bold;
+    color: var(--button-login);
+    font-family: 'Poppins', sans-serif;
+    text-transform: uppercase;
+}
+.footer-column > h6{
+    font-size: 15px;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    text-transform: uppercase;
+}
+.footer-column > p {
+    text-align: justify;
+    color: rgb(105, 104, 104);
+}
+.footer-column > h4:nth-child(2), .footer-column > h4:nth-child(3){
+    font-size: 23px !important;
+    margin: 28px 0px;
+}
+.list-column > li {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.info{
+    font-size: 20px;
+    color: white;
+    text-transform: uppercase;
+}
+.footer-side li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 0px;
+}
+.footer-contact li{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 0px;
+}
+.text-yellow{
+    color: #a07b41;
+}
