@@ -4,13 +4,17 @@ import { InputText } from 'primereact/inputtext';
 import { Button } from 'primereact/button';
 import jackpot from '../../assets/logo/jackpot.PNG'
 import jsonfile from '../../assets/PRAGMATICPLAY-gamelist.json'
+import { Rating } from 'primereact/rating';
+ 
+
 
 
 function FindGame() {
 
     const [hovers, setHover] = useState(false);
-    const [imageid, setId] = useState("");
+    const [searchID, setSearchID] = useState("");
     const [selectedItemIndex, setSelectedItemIndex] = useState(-1);
+
 
     useEffect(() => {
         Display();
@@ -24,7 +28,11 @@ function FindGame() {
         setSelectedItemIndex(-1);
     }
 
+    const SearchID = (e) =>{
+        setSearchID(e);
+    }
 
+    
 
     return (
         <React.Fragment>
@@ -33,7 +41,7 @@ function FindGame() {
                     <div class="container">
                         <div className="login-nav">
                             <FaSearch id='search' />
-                            <input type="text" className="input-search" placeholder='User ID' />
+                            <input type="text" className="input-search" onChange={(e) => SearchID(e.target.value)} placeholder='User ID' />
                         </div>
                         <div className="d-flex">
                             <span className='me-4'>new games</span>
@@ -53,53 +61,55 @@ function FindGame() {
                     <div className="col-lg-3">
                         <div className="sidebar">
                             <li>
-                                <span>featured </span> <FaStar size={18} className='mt-1 text-light' />
+                                <span>featured </span> <FaStar size={18} className='mt-1  text-light icon-yellow' />
                             </li>
                             <li>
-                                <span>top games </span> <FaTrophy size={18} className='mt-1 text-light' />
+                                <span>top games </span> <FaTrophy size={18} className='mt-1 text-light icon-yellow' />
                             </li>
                             <li>
-                                <span>video slots </span> <FaCoins size={18} className='mt-1 text-light' />
+                                <span>video slots </span> <FaCoins size={18} className='mt-1 text-light icon-yellow' />
                             </li>
                             <li>
-                                <span>classic slots </span> <FaCoins size={18} className='mt-1 text-light' />
+                                <span>classic slots </span> <FaCoins size={18} className='mt-1 text-light icon-yellow' />
                             </li>
                             <li>
-                                <span>3d slots </span> <FaSearch size={18} className='mt-1 text-light' />
+                                <span>3d slots </span> <FaSearch size={18} className='mt-1 text-light icon-yellow' />
                             </li>
                             <li>
-                                <span>live casino </span> <FaSearch size={18} className='mt-1 text-light' />
+                                <span>live casino </span> <FaSearch size={18} className='mt-1 text-light icon-yellow' />
                             </li>
                             <li>
-                                <span>black jack </span> <FaSearch size={18} className='mt-1 text-light' />
+                                <span>black jack </span> <FaSearch size={18} className='mt-1 text-light icon-yellow' />
                             </li>
                             <li>
-                                <span>roulette </span> <FaSearch size={18} className='mt-1 text-light' />
+                                <span>roulette </span> <FaSearch size={18} className='mt-1 text-light icon-yellow' />
                             </li>
                             <li>
-                                <span>table games </span> <FaSearch size={18} className='mt-1 text-light' />
+                                <span>table games </span> <FaSearch size={18} className='mt-1 text-light icon-yellow' />
                             </li>
                             <li>
-                                <span>video poker </span> <FaSearch size={18} className='mt-1 text-light' />
+                                <span>video poker </span> <FaSearch size={18} className='mt-1 text-light icon-yellow' />
                             </li>
                             <li>
-                                <span>jackpot </span> <FaSearch size={18} className='mt-1 text-light' />
+                                <span>jackpot </span> <FaSearch size={18} className='mt-1 text-light icon-yellow' />
                             </li>
                             <li>
-                                <span>other games </span> <FaSearch size={18} className='mt-1 text-light' />
+                                <span>other games </span> <FaSearch size={18} className='mt-1 text-light icon-yellow' />
                             </li>
                             <li>
-                                <span>favourite games </span> <FaHeart size={18} className='mt-1 text-light' />
+                                <span>favourite games </span> <FaHeart size={18} className='mt-1 text-light icon-yellow' />
                             </li>
                             <li>
-                                <span>all games </span> <FaSearch size={18} className='mt-1 text-light' />
+                                <span>all games </span> <FaSearch size={18} className='mt-1 text-light icon-yellow' />
                             </li>
                         </div>
                     </div>
                     <div className="col-lg-9">
                         <div className="row justify-content-evenly item-center">
                             {
-                                jsonfile.map((data, id) => {
+                                jsonfile.filter((data) => {
+                                    return searchID.toLowerCase() === '' ? data : data.game_name_en.toLowerCase().includes(searchID)
+                                }).map((data, id) => {
                                     return (
                                         <div className="col-md-4">
                                             <div className="d-flex justify-content-between">
@@ -116,8 +126,8 @@ function FindGame() {
                                                     </div>
                                                     <div className="d-block">
                                                         <div className="d-flex justify-content-around">
-                                                            <span>{data.game_name_cn}</span>
-                                                            <span>star</span>
+                                                            <span className='title-img'>{data.game_name_cn}</span>
+                                                            <span><Rating value={data.ranking} className="" cancel={false} /></span>
                                                         </div>
                                                     </div>
                                                     {data.is_new === "Y" ? <span className='newtag'> <p>NEW</p></span> : ""}

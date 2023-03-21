@@ -15,7 +15,7 @@
     "is_top": "",
     "is_new": "Y",
     "additional_id": "",
-    "ranking": "",
+    "ranking": "3",
     "id": ""
   },
   {
@@ -34,7 +34,7 @@
     "is_top": "",
     "is_new": "Y",
     "additional_id": "",
-    "ranking": "",
+    "ranking": "2",
     "id": ""
   },
   {
@@ -53,7 +53,7 @@
     "is_top": "",
     "is_new": "N",
     "additional_id": "",
-    "ranking": "",
+    "ranking": "1",
     "id": ""
   },
   {
@@ -72,7 +72,7 @@
     "is_top": "",
     "is_new": "N",
     "additional_id": "",
-    "ranking": "",
+    "ranking": "5",
     "id": ""
   },
   {
@@ -91,7 +91,7 @@
     "is_top": "",
     "is_new": "N",
     "additional_id": "",
-    "ranking": "",
+    "ranking": "4",
     "id": ""
   },
   {
@@ -110,7 +110,64 @@
     "is_top": "",
     "is_new": "N",
     "additional_id": "",
-    "ranking": "",
+    "ranking": "3",
+    "id": ""
+  },
+  {
+    "game_id": "7",
+    "game_image": "image/game-image4.jpg",
+    "game_name_en": "Angel Princess",
+    "game_name_cn": "天使公主",
+    "game_id_desktop": "YP827",
+    "game_id_mobile": "YP827",
+    "game_category": "SLOTS",
+    "game_provider": "PRAGMATIC PLAY",
+    "sub_game_provider": "",
+    "game_launch_code": "",
+    "is_flash": "Y",
+    "is_html5": "Y",
+    "is_top": "",
+    "is_new": "N",
+    "additional_id": "",
+    "ranking": "2",
+    "id": ""
+  },
+  {
+    "game_id": "8",
+    "game_image": "image/game-image3.jpg",
+    "game_name_en": "Angel Princess",
+    "game_name_cn": "天使公主",
+    "game_id_desktop": "YP827",
+    "game_id_mobile": "YP827",
+    "game_category": "SLOTS",
+    "game_provider": "PRAGMATIC PLAY",
+    "sub_game_provider": "",
+    "game_launch_code": "",
+    "is_flash": "Y",
+    "is_html5": "Y",
+    "is_top": "",
+    "is_new": "N",
+    "additional_id": "",
+    "ranking": "3",
+    "id": ""
+  },
+  {
+    "game_id": "9",
+    "game_image": "image/game-image1.jpg",
+    "game_name_en": "Angel Princess",
+    "game_name_cn": "天使公主",
+    "game_id_desktop": "YP827",
+    "game_id_mobile": "YP827",
+    "game_category": "SLOTS",
+    "game_provider": "PRAGMATIC PLAY",
+    "sub_game_provider": "",
+    "game_launch_code": "",
+    "is_flash": "Y",
+    "is_html5": "Y",
+    "is_top": "",
+    "is_new": "N",
+    "additional_id": "",
+    "ranking": "3",
     "id": ""
   }
 ]

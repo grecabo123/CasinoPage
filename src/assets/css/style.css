@@ -131,7 +131,7 @@ div > span{
     border-bottom: 2px dotted;
 }
 .sidebar li > span{
-    font-size: 18px;
+    font-size: 15px;
     color: white;
     text-transform: uppercase;
     font-family: 'Poppins', sans-serif;
@@ -149,7 +149,7 @@ div > span{
 }
 .show{
     background-color: black;
-    opacity: 0.2;
+    opacity: 0.1;
 }
 .transition-box{
     position: absolute;
@@ -204,4 +204,11 @@ div > span{
     font-family: 'Poppins', sans-serif;
     font-size: 15px;
     transform: rotate(-45deg);
+}
+.p-rating .p-rating-item.p-rating-item-active .p-rating-icon, .icon-yellow{
+    color: #d6901e !important;
+}
+.title-img{
+    font-size: 13px;
+    color: var(--button-login);
 }
