@@ -217,11 +217,23 @@ div > span{
     padding: 30px;
 }
 .footer-column > h4{
-    font-size: 20px;
+    font-size: 15px;
     font-weight: bold;
     color: var(--button-login);
     font-family: 'Poppins', sans-serif;
     text-transform: uppercase;
+}
+.service h4{
+    margin: 20px 0px;
+    font-size: 15px;
+    font-weight: bold;
+    color: var(--button-login);
+    font-family: 'Poppins', sans-serif;
+    text-transform: uppercase;
+}
+.depo{
+    position: relative;
+    top: 20px;
 }
 .footer-column > h6{
     font-size: 15px;
@@ -234,7 +246,7 @@ div > span{
     color: rgb(105, 104, 104);
 }
 .footer-column > h4:nth-child(2), .footer-column > h4:nth-child(3){
-    font-size: 23px !important;
+    font-size: 15px !important;
     margin: 28px 0px;
 }
 .list-column > li {
@@ -243,7 +255,7 @@ div > span{
     align-items: center;
 }
 .info{
-    font-size: 20px;
+    font-size: 15px;
     color: white;
     text-transform: uppercase;
 }
@@ -253,12 +265,100 @@ div > span{
     align-items: center;
     margin: 20px 0px;
 }
-.footer-contact li{
+.footer-contact{
     display: flex;
-    justify-content: space-between;
+    position: relative;
+    top: 1px;
+    justify-content: flex-start;
+    flex-flow: column;
+}
+.footer-contact li {
+    list-style: none;
+    display: flex;
     align-items: center;
-    margin: 20px 0px;
+    margin: 14px 0px;
+}
+.list-info li{
+    vertical-align: middle;
+    list-style: none;
+    margin: -4px 20px;
+}
+.list-info li > span {
+    font-size: 16px;
+    text-transform: capitalize;
+    color: rgb(231, 231, 231);
+}
+.list-info li small,.list-info li a{
+    color: rgb(175, 175, 175);
+}
+.option-list li {
+    margin: 0px 20px;
+    vertical-align: middle;
 }
 .text-yellow{
     color: #a07b41;
+}
+.footer-list li{
+    display: inline-block;
+}
+.footer-list li > span {
+    font-size: 15px !important;
+    text-transform: capitalize;
+    color: rgb(117, 117, 117);
+}
+.copyright > span {
+    font-size: 15px !important;
+    color: rgb(117, 117, 117);
+}
+.border-btm{
+    padding: 6px;
+    border-bottom: 1px solid white;
+}
+.footer-info{
+    font-size: 20px;
+    text-transform: uppercase;
+    color: rgb(117, 117, 117);
+}
+.box-border-btm{
+    width: 100%;
+    height: 2px;
+    margin-top: 1.7rem;
+    position: relative;
+    background-color: rgb(114, 114, 114);
+}
+.information-list div > li {
+    display: block;
+    list-style: none;
+    margin: 14px 0px;
+}
+
+.information-list div  li > h5{
+    font-size: 18px;
+    color: #ae0508;
+    text-transform: capitalize;
+}
+.information-list div  li > p {
+    font-size: 15px;
+    color: rgb(117, 117, 117);
+}
+.progress{
+    position: relative;
+    top: -20px;
+    background-color: #e9ecef2e;
+}
+.progress-bar{
+    background-color: #ae0508;
+}
+.num{
+    font-size: 30px;
+    position: relative;
+    top: -15px;
+    color: #ae0508;
+}
+.text-mins{
+    font-size: 14px !important;
+    color: rgb(117, 117, 117) !important;
+}
+.top-move{
+    position: relative;
 }
