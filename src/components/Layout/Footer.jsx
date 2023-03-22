@@ -9,7 +9,7 @@ function Footer() {
         <footer className='mt-auto bg-footer'>
             <div className="container">
                 <div className="row justify-content-space item-center">
-                    <div className="col-md-3 mb-2 title">
+                    <div className="col-lg-3 col-md-12 col-sm- mb-2 title">
                         <div className="footer-column">
                             <h4>service advantages</h4>
                             <div className='service'>
@@ -39,7 +39,7 @@ function Footer() {
                            
                         </div>
                     </div>
-                    <div className="col-md-3 mb-2 title">
+                    <div className="col-lg-3 col-md-12 mb-2 title">
                         <div className="footer-column">
                             <h4>product advantages</h4>
                             <h6>sports</h6>
@@ -48,7 +48,7 @@ function Footer() {
                             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Asperiores ullam molestias suscipit quos ipsa sit sed, ex voluptates error necessitatibus.</p>
                         </div>
                     </div>
-                    <div className="col-md-3 mb-2 title">
+                    <div className="col-lg-3 col-md-12 mb-2 title">
                         <div className="row justify-content-center footer-column">
                             <h4>info center</h4>
 
@@ -65,7 +65,7 @@ function Footer() {
                             </div>
                         </div>
                     </div>
-                    <div className="col-md-3 mb-2 title">
+                    <div className="col-lg-3 col-md-12 mb-2 title">
                         <div className="row justify-content-center footer-column">
                             <h4>contact us</h4>
                             <div className="footer-contact">
@@ -97,7 +97,7 @@ function Footer() {
                 </div>
                 <div className="bg-secondary py-2 mt-4"></div>
                 {/* <div className="border-btm"> */}
-                <div class="d-flex justify-content-between mt-2">
+                <div class="d-flex justify-content-between mt-2 align-text">
                     <div>
                         <div className="footer-list">
                             <li className='me-3'><span>about us</span></li>
@@ -116,7 +116,7 @@ function Footer() {
 
                 <div className="mt-5">
                     <div className="row">
-                        <div className="col-md-3">
+                        <div className="col-lg-3 col-md-12">
                             <h5 className='footer-info'>information</h5>
                             <div className="box-border-btm"></div>
                             <div className="information-list">
@@ -134,7 +134,7 @@ function Footer() {
                                 </div>
                             </div>
                         </div>
-                        <div className="col-md-3">
+                        <div className="col-lg-3 col-md-12">
                             <h5 className='footer-info'>products</h5>
                             <div className="box-border-btm"></div>
                             <div className="information-list">
@@ -152,7 +152,7 @@ function Footer() {
                                 </div>
                             </div>
                         </div>
-                        <div className="col-md-3">
+                        <div className="col-lg-3 col-md-12">
                             <h5 className='footer-info'>info center</h5>
                             <div className="box-border-btm"></div>
                             <div className="information-list">
@@ -170,7 +170,7 @@ function Footer() {
                                 </div>
                             </div>
                         </div>
-                        <div className="col-md-3">
+                        <div className="col-lg-3 col-md-12">
                             <h5 className='footer-info'>betting info</h5>
                             <div className="box-border-btm"></div>
                             <div className="information-list">
