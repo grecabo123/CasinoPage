@@ -41,7 +41,7 @@ function FindGame() {
                     <div class="container">
                         <div className="login-nav">
                             <FaSearch id='search' />
-                            <input type="text" className="input-search" onChange={(e) => SearchID(e.target.value)} placeholder='User ID' />
+                            <input type="text" className="input-search" onChange={(e) => SearchID(e.target.value)} placeholder='FIND A GAME' />
                         </div>
                         <div className='d-none d-lg-block d-xl-none'>
                         <div className="d-flex">
@@ -60,7 +60,7 @@ function FindGame() {
             </div>
             <div className="container mt-4">
                 <div className="row justify-content-center item-center">
-                    <div className="col-lg-3 d-md-none d-lg-block d-sm-none">
+                    <div className="col-lg-3 mb-3">
                         <div className="sidebar">
                             <li>
                                 <span>featured </span> <FaStar size={18} className='mt-1  text-light icon-yellow' />

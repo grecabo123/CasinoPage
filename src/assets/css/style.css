@@ -179,7 +179,7 @@ div>span {
 .transition-box {
     position: absolute;
     top: 26px;
-    left: 0;
+    left: -10px;
     right: 0;
 }
 
@@ -250,6 +250,8 @@ div>span {
 .bg-footer {
     background-color: #141212;
     padding: 30px;
+    position: relative;
+    top: 20px;
 }
 
 .footer-column>h4 {
